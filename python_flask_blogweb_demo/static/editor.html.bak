@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>写帖子</title>
+    <link rel="stylesheet" href="css/navigation bar.css">
+    <link rel="stylesheet" href="css/editor.css">
+</head>
+<body>
+<div class="导航栏">
+    <div class="left-logo">
+        <div class="logo"><img src="img/dog.jpg" width="45"></div>
+        <p>家节君の论坛系统</p>
+    </div>
+
+    <div class="占位"></div>
+
+    <div class="right-function">
+        <a href="list.html">index</a>
+        <a href="editor.html" target="_blank">edit</a>
+        <a href="login.html" target="_blank">logout</a>
+    </div>
+</div>
+
+<div class="blog-edit-container">
+    <div class="title">
+        <input type="text" placeholder="在这里写下主贴标题" id="title">
+        <button id="submit" onclick="sendContent()">发布帖子</button>
+    </div>
+
+    <form method="post" action="../EditorUser">
+        <div id="editor" class="编辑器"></div>
+    </form>
+    <link rel="stylesheet" href="node_modules/editor.md/css/editormd.min.css" />
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/editor.md/lib/marked.min.js"></script>
+    <script src="node_modules/editor.md/lib/prettify.min.js"></script>
+    <script src="node_modules/editor.md/editormd.js"></script>
+</div>
+
+<script>
+    var content = '# 在这里写下一篇帖子 ##';
+    var config = {
+        // 这里的尺寸必须在这里设置. 设置样式会被 editormd 自动覆盖掉.
+        width: "100%",
+        // 高度 100% 意思是和父元素一样高. 要在父元素的基础上去掉标题编辑区的高度
+        height: "100vh",
+        // 编辑器中的初始内容
+        markdown: content,
+        // 指定 editor.md 依赖的插件路径
+        path: "node_modules/editor.md/lib/"
+    };
+    editormd("editor", config);
+</script>
+<script src="js/editor.js"></script>
+</body>
+</html>

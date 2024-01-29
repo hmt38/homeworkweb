@@ -1,0 +1,40 @@
+.主体区 {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.用户信息列表 {
+    width: 360px;
+    height: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 16px;
+    background-color: rgba(255,255,255,0.7);
+}
+.个人中心{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h2 {
+    font-size: 20px;
+    align-items: center;
+}
+.头像整体{
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.头像 {
+    align-items: center;
+    border-radius: 100%;
+    overflow: hidden;
+
+}

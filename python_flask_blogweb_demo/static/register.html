@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/navigation bar.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+<div class="导航栏">
+    <div class="left-logo">
+        <div class="logo"><img src="img/dog.jpg" width="45"></div>
+        <p>家节君の论坛系统</p>
+    </div>
+
+    <div class="占位"></div>
+
+    <div class="right-function">
+        <a href="list.html">index</a>
+        <a href="editor.html" target="_blank">发新帖</a>
+        <a href="login.html" target="_blank">logout</a>
+    </div>
+</div>
+
+<div class="主体区">
+    <div class="注册框">
+        <form action="">
+            <h2>注册</h2>
+            <div>
+                <span>昵称</span>
+                <input type="text" class="text" id="username" placeholder="请输入昵称">
+            </div>
+            <div>
+                <span>手机号码</span>
+                <input type="text" class="text" id="phone" placeholder="请输入手机号码">
+            </div>
+            <div>
+                <span>Email</span>
+                <input type="text" class="text" id="email" placeholder="请输入Email">
+            </div>
+            <div>
+                <span>短信验证码</span>
+                <input type="text" class="text" id="smsCode" placeholder="请输入短信验证码">
+                <button id="sendSmsBtn" onclick="sendSms()">发送验证码</button>
+            </div>
+
+            <div>
+                <span>职业</span>
+                <input type="text" class="text" id="job" placeholder="请输入职业">
+            </div>
+
+            <div>
+                <span>密码</span>
+                <input type="password" id="password" class="text" placeholder="请输入密码">
+            </div>
+            <div>
+                <span>再次确认密码</span>
+                <input type="password" id="password2" class="text" placeholder="请再次确认密码">
+            </div>
+            <div>
+                <input type="button" class="提交" value="注册" onclick="addUser()">
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="js/hash.js"></script>
+<script src="js/register.js"></script>
+
+</body>
+</html>

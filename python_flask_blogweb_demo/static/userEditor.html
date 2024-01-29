@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UserHome</title>
+    <link rel="stylesheet" href="css/navigation bar.css">
+    <link rel="stylesheet" href="css/userEditor.css">
+</head>
+<body>
+<div class="导航栏">
+    <div class="left-logo">
+        <div class="logo"><img src="img/dog.jpg" width="45"></div>
+        <p>家节君の论坛系统</p>
+    </div>
+
+    <div class="占位"></div>
+
+    <div class="right-function">
+        <a href="list.html">index</a>
+        <a href="editor.html" target="_blank">发新帖</a>
+        <a href="login.html" target="_blank">logout</a>
+        <a href="user.html" target="_blank">userHome</a>
+    </div>
+</div>
+
+<div class="主体区">
+    <div class="展示框">
+        <form action="">
+            <h2>修改个人信息</h2>
+            <div>
+                <span>昵称</span>
+                <input type="text" class="text" id="username" placeholder="请输入昵称">
+            </div>
+            <div>
+                <span>职业</span>
+                <input type="text" class="text" id="job" placeholder="请输入职业">
+            </div>
+            <div>
+                <span>签名档</span>
+                <input type="text" id="text" class="text" placeholder="请输入个性签名">
+            </div>
+            <div>
+                <span>上传头像</span>
+                <input type="file" id="headImg" class="file" accept="image/*">
+            </div>
+            <div>
+                <input type="button" class="提交" value="确认修改" onclick="EditUser()">
+            </div>
+        </form>
+    </div>
+</div>
+<script src="js/userEditor.js"></script>
+</body>
+</html>

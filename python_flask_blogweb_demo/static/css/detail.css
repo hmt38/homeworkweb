@@ -1,0 +1,74 @@
+.板块列表{
+    height: 100%;
+    overflow: hidden;
+    width: calc(100% - 190px - 5px);
+
+    padding: 15px;
+
+    background: rgba(255,255,255,0.6);
+}
+
+ol {
+    list-style: none;
+}
+
+.板块信息 {
+    margin: 5px auto;
+    padding: 10px;
+    background: rgba(255,255,255,0.7);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.板块名称 {
+    font-size: 18px;
+    text-align: left;
+}
+.主贴时间 {
+    font-size: 10px;
+    text-align: right;
+}
+.版主 {
+    font-size: 10px;
+    text-align: right;
+}
+.板块说明 {
+    padding: 5px;
+    text-indent: 2em;
+
+    font-size: 13px;
+}
+
+
+.点击 {
+    display: flex;
+    justify-content: right;
+    text-align: center;
+    font-size: 10px;
+}
+.数量 {
+    margin: 0px 10px 0 0;
+}
+
+#title {
+    height: 40px;
+    width: 620px;
+    text-indent: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color:rgba(255, 255, 255, 0.8);
+}
+
+#submit {
+    height: 40px;
+    width: 80px;
+
+    color: white;
+    background: orange;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+
+}

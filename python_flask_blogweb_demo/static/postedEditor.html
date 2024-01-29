@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>写帖子</title>
+    <link rel="stylesheet" href="css/navigation bar.css">
+    <link rel="stylesheet" href="css/editor.css">
+</head>
+<body>
+<div class="导航栏">
+    <div class="left-logo">
+        <div class="logo"><img src="img/dog.jpg" width="45"></div>
+        <p>家节君の论坛系统</p>
+    </div>
+
+    <div class="占位"></div>
+
+    <div class="right-function">
+        <a href="list.html">index</a>
+        <a href="editor.html" target="_blank">发新帖</a>
+        <a href="user.html" target="_blank">userHome</a>
+        <a href="login.html" target="_blank">logout</a>
+    </div>
+</div>
+
+<div class="blog-edit-container">
+    <div class="title">
+        <input type="text" placeholder="在这里写下主贴标题" id="title">
+        <button id="submit" onclick="sendContent()">发布帖子</button>
+    </div>
+
+    <form method="post" action="../postedQuestion_edit">
+        <div id="editor" class="编辑器"></div>
+    </form>
+    <link rel="stylesheet" href="node_modules/editor.md/css/editormd.min.css" />
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/editor.md/lib/marked.min.js"></script>
+    <script src="node_modules/editor.md/lib/prettify.min.js"></script>
+    <script src="node_modules/editor.md/editormd.js"></script>
+    <span>上传图片</span>
+    <input type="file" id="image_s" class="file" accept="image/*">
+    <span>上传视频</span>
+    <input type="file" id="video_s" class="file" accept="*/*">
+
+</div>
+
+<script src="js/postedEditor.js"></script>
+</body>
+</html>

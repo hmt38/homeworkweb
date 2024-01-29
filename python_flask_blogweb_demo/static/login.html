@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/navigation bar.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="导航栏">
+    <div class="left-logo">
+        <div class="logo"><img src="img/dog.jpg" width="45"></div>
+        <p>家节君の论坛系统</p>
+    </div>
+
+    <div class="占位"></div>
+
+    <div class="占位"></div>
+
+    <div class="right-function">
+        <a href="list.html">index</a>
+        <a href="editor.html" target="_blank">发新帖</a>
+        <a href="register.html" target="_blank">register</a>
+    </div>
+</div>
+
+<div class="主体区">
+    <div class="登录框">
+        <form action="">
+            <h2>登录</h2>
+            <div>
+                <span>电话号码</span>
+                <input type="text" class="text" id="phone" placeholder="请输入电话号码" required>
+            </div>
+            <div>
+                <span>密码</span>
+                <input type="password" class="text" id="password" placeholder="请输入密码" required>
+            </div>
+            <div>
+                <!-- rememberMe 复选框 -->
+                <label for="rememberMe">记住我</label>
+                <input type="checkbox" id="rememberMe" name="rememberMe"><br><br>
+            </div>
+            <div>
+                <input type="button" class="提交" value="登录" onclick="checkUser()">
+            </div>
+        </form>
+    </div>
+</div>
+<script src="js/hash.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
