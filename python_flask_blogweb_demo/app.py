@@ -19,7 +19,7 @@ app.config.update(dict(
     MAIL_USE_TLS=True,
     # MAIL_USE_SSL
     MAIL_USERNAME="2028148042@qq.com",
-    MAIL_PASSWORD="kwsthhnkzjnudbbe",  # 生成授权码，授权码是开启smtp服务后给出的
+    MAIL_PASSWORD="*********",  # 生成授权码，授权码是开启smtp服务后给出的
     MAIL_DEFAULT_SENDER="2028148042@qq.com"
 ))
 # 配置秘密密钥，用于 JWT 编码和解码
